@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>跑马灯</title>
+<script language="javascript">
+var mystring="换用使用跑马灯实例程序";
+n=mystring.length;
+function pmd()
+{mystring=mystring.substring(1,n)+mystring.substring(0,1);
+window.status=mystring;
+window.setTimeout("pmd()",150);
+}
+</script>
+</head>
+
+<body onload="pmd()" bgcolor="#99CcFF">
+</body>
+</html>
